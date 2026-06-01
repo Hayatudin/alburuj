@@ -5,60 +5,70 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative bg-white pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section className="relative bg-transparent pt-40 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      {/* Subtle background blobs */}
+      <div className="absolute top-24 -left-20 w-80 h-80 rounded-full bg-[#0079FE]/5 blur-3xl pointer-events-none"></div>
+      <div className="absolute top-40 -right-20 w-80 h-80 rounded-full bg-[#0079FE]/10 blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Heading & Clean Value Proposition */}
-          <div className="lg:col-span-6 flex flex-col items-start relative z-10">
+          <div className="lg:col-span-6 flex flex-col items-start relative z-10 text-left">
+            {/* Pill Badge */}
+            <div className="inline-flex items-center gap-2 bg-[#0079FE]/10 border border-[#0079FE]/20 text-[#0079FE] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 shadow-2xs">
+              <span>Government Certified Placement Agency</span>
+            </div>
+
             {/* Main Title */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-navy leading-[1.15] tracking-tight mb-6 max-w-xl">
-              A new way to work & get careers
+            <h1 className="text-4xl sm:text-5xl md:text-[54px] font-black text-slate-900 leading-[1.08] tracking-tight mb-6 max-w-xl font-sans">
+              A new way to work <br className="hidden sm:inline" />
+              & get premium <span className="text-[#0079FE]">careers</span>
             </h1>
             
             {/* Subtext */}
-            <p className="text-base md:text-lg text-brand-navy/60 font-medium leading-relaxed max-w-lg mb-8">
+            <p className="text-base md:text-lg text-slate-600 font-medium leading-relaxed max-w-lg mb-8">
               Albrooj is here for you with verified job placements and compliant visa services from skilled advisors and top employers all around the Arab world.
             </p>
             
             {/* Capsule Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mb-16">
+            <div className="flex flex-wrap items-center gap-4 mb-16 w-full sm:w-auto">
               <a
                 href="#contact"
-                className="px-8 py-3.5 bg-[#A294F9] hover:bg-[#8F7EF2] text-white font-semibold rounded-full shadow-sm hover:shadow transition-all text-[15px]"
+                className="w-full sm:w-auto text-center bg-[#0079FE] hover:bg-[#0263e2] text-white px-8 py-4 rounded-full font-bold shadow-md shadow-brand-500/10 hover:shadow-lg hover:shadow-brand-500/25 active:scale-95 transition-all duration-300 text-[14px]"
               >
                 Join the Agency
               </a>
               
               <a
                 href="#services"
-                className="px-8 py-3.5 bg-white border border-gray-300 hover:border-gray-400 text-brand-navy font-semibold rounded-full transition-all text-[15px]"
+                className="w-full sm:w-auto text-center bg-white border border-slate-200 text-slate-800 px-8 py-4 rounded-full font-semibold hover:bg-slate-50 hover:border-slate-350 active:scale-95 transition-all duration-300 text-[14px]"
               >
                 Learn more
               </a>
             </div>
             
             {/* Clean Stats */}
-            <div className="flex items-center gap-10 border-t border-gray-100 pt-8 w-full max-w-md">
+            <div className="flex items-center gap-10 border-t border-slate-200/60 pt-8 w-full max-w-md">
               <div>
-                <span className="block text-3xl font-extrabold text-brand-navy">15,2K</span>
-                <span className="text-[13px] font-semibold text-brand-navy/40 mt-1 block">Active candidates</span>
+                <span className="block text-3xl font-extrabold text-slate-900">15.2K</span>
+                <span className="text-[13px] font-semibold text-slate-500 mt-1 block">Active candidates</span>
               </div>
-              <div className="h-10 w-[1px] bg-gray-200" />
+              <div className="h-10 w-[1px] bg-slate-200" />
               <div>
-                <span className="block text-3xl font-extrabold text-brand-navy">4,5K</span>
-                <span className="text-[13px] font-semibold text-brand-navy/40 mt-1 block">Employers</span>
+                <span className="block text-3xl font-extrabold text-slate-900">4.5K</span>
+                <span className="text-[13px] font-semibold text-slate-500 mt-1 block">Employers</span>
               </div>
-              <div className="h-10 w-[1px] bg-gray-200" />
+              <div className="h-10 w-[1px] bg-slate-200" />
               <div className="flex items-center gap-3">
                 {/* Custom Overlapping Rings Graphic from the attached design */}
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full border-2 border-white bg-[#A294F9]/20 flex items-center justify-center" />
-                  <div className="w-8 h-8 rounded-full border-2 border-white bg-[#B4C3FF]/30 flex items-center justify-center" />
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-[#0079FE]/20 flex items-center justify-center" />
+                  <div className="w-8 h-8 rounded-full border-2 border-white bg-teal-500/20 flex items-center justify-center" />
                 </div>
-                <div>
-                  <span className="block text-sm font-extrabold text-brand-navy">98%</span>
-                  <span className="text-[11px] font-bold text-brand-navy/40 block">Visa Success</span>
+                <div className="text-left">
+                  <span className="block text-sm font-extrabold text-slate-900">98%</span>
+                  <span className="text-[11px] font-bold text-slate-500 block">Visa Success</span>
                 </div>
               </div>
             </div>
@@ -70,7 +80,7 @@ export default function Hero() {
             <div className="relative w-[480px] h-[440px] hidden sm:block">
               
               {/* 1. Top Left Portrait Card (Saudi) */}
-              <div className="absolute top-0 left-0 w-[210px] h-[260px] rounded-[2.5rem] overflow-hidden bg-[#E3F2FD] border border-gray-100">
+              <div className="absolute top-0 left-0 w-[210px] h-[260px] rounded-[2.5rem] overflow-hidden bg-[#E3F2FD] border border-slate-100 shadow-sm">
                 <Image
                   src="/saudi.jpg"
                   alt="Saudi Careers"
@@ -82,7 +92,7 @@ export default function Hero() {
               </div>
 
               {/* 2. Top Right Portrait Card (Kuwait - offset lower) */}
-              <div className="absolute top-[35px] left-[230px] w-[210px] h-[260px] rounded-[2.5rem] overflow-hidden bg-[#F3E5F5] border border-gray-100">
+              <div className="absolute top-[35px] left-[230px] w-[210px] h-[260px] rounded-[2.5rem] overflow-hidden bg-[#F3E5F5] border border-slate-100 shadow-sm">
                 <Image
                   src="/kuwait.png"
                   alt="Kuwait Careers"
@@ -94,7 +104,7 @@ export default function Hero() {
               </div>
 
               {/* 3. Bottom Left Landscape Card (UAE) */}
-              <div className="absolute top-[280px] left-0 w-[210px] h-[150px] rounded-[2.5rem] overflow-hidden bg-[#E8F5E9] border border-gray-100">
+              <div className="absolute top-[280px] left-0 w-[210px] h-[150px] rounded-[2.5rem] overflow-hidden bg-[#E8F5E9] border border-slate-100 shadow-sm">
                 <Image
                   src="/uae.png"
                   alt="UAE Careers"
@@ -140,15 +150,15 @@ export default function Hero() {
               <div className="absolute top-[395px] left-[345px] w-4.5 h-4.5 rounded-full bg-[#B3E5FC]" />
             </div>
 
-            {/* Mobile Fallback (Simple horizontal scroll or simple row) */}
+            {/* Mobile Fallback */}
             <div className="sm:hidden grid grid-cols-3 gap-3 w-full">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-sky-50 border">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-sky-50 border shadow-xs">
                 <Image src="/saudi.jpg" alt="Saudi" fill className="object-cover" sizes="100px" />
               </div>
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-purple-50 border">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-purple-50 border shadow-xs">
                 <Image src="/kuwait.png" alt="Kuwait" fill className="object-cover" sizes="100px" />
               </div>
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-emerald-50 border">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-emerald-50 border shadow-xs">
                 <Image src="/uae.png" alt="UAE" fill className="object-cover" sizes="100px" />
               </div>
             </div>

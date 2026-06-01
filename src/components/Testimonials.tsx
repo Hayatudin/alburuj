@@ -42,7 +42,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative py-20 bg-brand-slate border-y border-gray-100 overflow-hidden">
+    <section id="testimonials" className="relative py-24 bg-transparent border-t border-slate-200/40 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
@@ -113,7 +113,7 @@ export default function Testimonials() {
                     className="w-full p-6 md:p-8 bg-white rounded-3xl shadow-xs border border-gray-200 transition-all duration-500 relative"
                   >
                     {/* User profile bubble */}
-                    <div className="absolute top-[-22px] left-8 w-11 h-11 rounded-full bg-[#A294F9] text-white font-extrabold text-sm flex items-center justify-center border-4 border-white shadow-sm">
+                    <div className="absolute top-[-22px] left-8 w-11 h-11 rounded-full bg-[#0079FE] text-white font-extrabold text-sm flex items-center justify-center border-4 border-white shadow-sm">
                       {item.initials}
                     </div>
 
@@ -158,14 +158,14 @@ export default function Testimonials() {
             <div className="flex flex-col gap-3 ml-4 relative z-10">
               <button
                 onClick={handlePrev}
-                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-brand-navy transition-colors active:scale-95"
+                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
                 aria-label="Previous testimonial"
               >
                 <ChevronUp className="w-5 h-5" />
               </button>
               <button
                 onClick={handleNext}
-                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-brand-navy hover:text-white hover:border-brand-navy flex items-center justify-center text-brand-navy transition-colors active:scale-95"
+                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
                 aria-label="Next testimonial"
               >
                 <ChevronDown className="w-5 h-5" />

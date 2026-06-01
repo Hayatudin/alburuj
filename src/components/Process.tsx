@@ -31,7 +31,7 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="relative py-20 bg-white overflow-hidden">
+    <section id="process" className="relative py-24 bg-transparent overflow-hidden border-t border-slate-200/40">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           

@@ -35,7 +35,7 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: #FAF9F6;
   color: var(--foreground);
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   scroll-behavior: smooth;
@@ -53,6 +53,20 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-effect-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .bg-dot-pattern {
   background-size: 24px 24px;
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
@@ -66,3 +80,20 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Infinite Marquee Slider Animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

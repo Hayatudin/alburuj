@@ -14,7 +14,7 @@ export default function ContactMap() {
   };
 
   return (
-    <section id="contact" className="relative py-20 bg-white overflow-visible">
+    <section id="contact" className="relative py-24 bg-transparent overflow-visible border-t border-slate-200/40">
       {/* Clean Dot Grid Accent */}
       <div className="absolute bottom-[5%] left-[3%] w-[100px] h-[100px] bg-dot-pattern opacity-40 hidden md:block" />
 
@@ -24,7 +24,7 @@ export default function ContactMap() {
           {/* Left Column: Agency Info & WhatsApp Integration (5 columns) */}
           <div className="lg:col-span-5 flex flex-col justify-between gap-8">
             <div>
-              <span className="text-[13px] md:text-sm uppercase tracking-[0.25em] font-extrabold text-[#A294F9] block mb-3">
+              <span className="text-[13px] md:text-sm uppercase tracking-[0.25em] font-extrabold text-[#0079FE] block mb-3">
                 Get In Touch
               </span>
               
@@ -54,7 +54,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">Direct Call Back</span>
-                    <a href="tel:+966500000000" className="block text-[14px] font-bold text-brand-navy hover:text-[#A294F9] transition-colors">+966 50 000 0000</a>
+                    <a href="tel:+966500000000" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">+966 50 000 0000</a>
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">E-Mail Address</span>
-                    <a href="mailto:apply@albrooj.com" className="block text-[14px] font-bold text-brand-navy hover:text-[#A294F9] transition-colors">apply@albrooj.com</a>
+                    <a href="mailto:apply@albrooj.com" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">apply@albrooj.com</a>
                   </div>
                 </div>
               </div>

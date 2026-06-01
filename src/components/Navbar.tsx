@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Globe, PhoneCall } from "lucide-react";
+import { Menu, X, Globe, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -25,108 +25,119 @@ export default function Navbar() {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "py-4 bg-white/90 backdrop-blur-sm shadow-xs border-b border-gray-100"
-          : "py-6 bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-[#A294F9] text-white font-extrabold text-lg">
-            A
-          </div>
-          <span className="font-serif text-2xl font-extrabold text-brand-navy tracking-wide">
-            Albrooj<span className="text-[#A294F9]">.</span>
-          </span>
-        </Link>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      {/* Top Utility Contact Bar */}
+      <div className="bg-[#FAF9F6] text-slate-600 py-2 px-4 sm:px-6 md:px-8 border-b border-slate-100 text-xs transition-all duration-300">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 font-medium">
+          <div className="flex items-center gap-6">
             <a
-              key={link.name}
-              href={link.href}
-              className="text-[15px] font-medium text-brand-navy/70 hover:text-brand-navy transition-colors duration-200"
+              href="tel:0924054412"
+              className="flex items-center gap-2 hover:text-[#0079FE] transition-colors"
             >
-              {link.name}
+              <Phone className="w-3.5 h-3.5 text-[#0079FE]" />
+              <span>0924054412</span>
             </a>
-          ))}
-        </nav>
-
-        {/* Actions */}
-        <div className="hidden lg:flex items-center gap-4">
-          <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-gray-50 text-[14px] font-semibold text-brand-navy transition-all">
-            <Globe className="w-4 h-4 text-[#A294F9]" />
-            <span>AR</span>
-          </button>
-
-          <a
-            href="#contact"
-            className="px-6 py-2.5 rounded-full text-[14px] font-semibold border border-gray-300 text-brand-navy hover:bg-brand-navy hover:text-white hover:border-brand-navy transition-all"
-          >
-            Contact
-          </a>
+            <a
+              href="mailto:ziyusheka@gmail.com"
+              className="flex items-center gap-2 hover:text-[#0079FE] transition-colors"
+            >
+              <Mail className="w-3.5 h-3.5 text-[#0079FE]" />
+              <span>ziyusheka@gmail.com</span>
+            </a>
+          </div>
+          <div className="flex items-center gap-4 text-[11px] text-slate-500">
+            <span className="flex items-center gap-1.5">
+              <Globe className="w-3.5 h-3.5 text-teal-600 animate-pulse" />
+              Government Licensed Foreign Employment Agency
+            </span>
+          </div>
         </div>
+      </div>
 
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden p-2 rounded-lg text-brand-navy hover:bg-gray-50 transition-all"
-          aria-label="Toggle navigation menu"
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+      {/* Main Navigation Bar */}
+      <div
+        className={`w-full py-5 px-6 md:px-12 transition-all duration-300 ${
+          scrolled
+            ? "glass-effect shadow-sm py-4 border-b border-slate-200/40"
+            : "bg-transparent border-b border-transparent"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-1 group">
+            <span className="font-extrabold text-2xl tracking-tight text-slate-900 font-sans">
+              Albrooj
+            </span>
+            <span className="w-2.5 h-2.5 rounded-full bg-[#0079FE] self-end mb-1.5 animate-pulse"></span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-9">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="font-semibold text-[13px] text-slate-600 hover:text-slate-900 tracking-tight transition-colors duration-200"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center gap-4">
+            <a
+              href="#contact"
+              className="bg-[#0079FE] hover:bg-[#0263e2] text-white px-6 py-2.5 rounded-full font-bold text-[13px] hover:shadow-lg hover:shadow-brand-500/20 active:scale-95 transition-all duration-300"
+            >
+              Apply Now
+            </a>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2 rounded-xl text-slate-800 hover:bg-slate-100 transition-all"
+            aria-label="Toggle navigation menu"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
-      <div
-        className={`lg:hidden fixed inset-y-0 right-0 z-45 w-4/5 max-w-sm bg-white border-l border-gray-200 p-8 flex flex-col shadow-lg transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex items-center justify-between mb-12">
-          <span className="font-serif text-2xl font-bold text-brand-navy tracking-wide">
-            Albrooj<span className="text-[#A294F9]">.</span>
-          </span>
-          <button
-            onClick={() => setIsOpen(false)}
-            className="p-2 rounded-full hover:bg-gray-50 text-brand-navy/70"
+      {isOpen && (
+        <div
+          className="lg:hidden fixed inset-0 z-40 bg-slate-950/40 backdrop-blur-sm"
+          onClick={() => setIsOpen(false)}
+        >
+          <div
+            className="absolute top-[105px] right-4 left-4 rounded-2xl glass-effect p-6 shadow-xl border border-white/20 flex flex-col gap-5 animate-in fade-in slide-in-from-top-4 duration-300"
+            onClick={(e) => e.stopPropagation()}
           >
-            <X className="w-6 h-6" />
-          </button>
-        </div>
+            <nav className="flex flex-col gap-4 text-left">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="font-bold text-base text-slate-800 hover:text-[#0079FE] py-2 border-b border-slate-100 transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
 
-        <nav className="flex flex-col gap-5 text-lg font-medium">
-          {navLinks.map((link) => (
             <a
-              key={link.name}
-              href={link.href}
+              href="#contact"
               onClick={() => setIsOpen(false)}
-              className="text-brand-navy/80 hover:text-brand-navy py-1 border-b border-gray-100 transition-colors"
+              className="bg-[#0079FE] hover:bg-[#0263e2] text-white text-center py-3 rounded-full font-bold hover:shadow-lg transition-all flex items-center justify-center gap-2"
             >
-              {link.name}
+              Apply Now
             </a>
-          ))}
-        </nav>
-
-        <div className="mt-auto pt-8 border-t border-gray-100 flex flex-col gap-4">
-          <button className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-gray-200 hover:bg-gray-50 font-semibold text-[15px] transition-all">
-            <Globe className="w-4 h-4 text-[#A294F9]" />
-            <span>Switch to Arabic</span>
-          </button>
-
-          <a
-            href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center w-full py-3 rounded-xl bg-[#A294F9] text-white font-bold text-[15px] transition-all hover:bg-[#8F7EF2]"
-          >
-            Contact Us
-          </a>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

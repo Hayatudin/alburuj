@@ -7,18 +7,18 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-gray-150 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#FAF9F6] border-t border-slate-200/40 pt-16 pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
           
           {/* Column 1: Branding & Intro */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link href="/" className="flex items-center gap-2 mb-6 group">
-              <div className="w-9 h-9 rounded-xl bg-[#A294F9] flex items-center justify-center text-white font-extrabold text-lg">
+              <div className="w-9 h-9 rounded-xl bg-[#0079FE] flex items-center justify-center text-white font-extrabold text-lg">
                 A
               </div>
               <span className="font-serif text-2xl font-extrabold text-brand-navy tracking-wide">
-                Albrooj<span className="text-[#A294F9]">.</span>
+                Albrooj<span className="text-[#0079FE]">.</span>
               </span>
             </Link>
             <p className="text-[14px] font-medium leading-relaxed text-brand-navy/60 max-w-sm mb-6">
@@ -36,22 +36,22 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3.5 text-[14px] font-medium text-brand-navy/70">
               <li>
-                <a href="#services" className="hover:text-[#A294F9] transition-colors">
+                <a href="#services" className="hover:text-[#0079FE] transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#destinations" className="hover:text-[#A294F9] transition-colors">
+                <a href="#destinations" className="hover:text-[#0079FE] transition-colors">
                   Destinations
                 </a>
               </li>
               <li>
-                <a href="#process" className="hover:text-[#A294F9] transition-colors">
+                <a href="#process" className="hover:text-[#0079FE] transition-colors">
                   Our Process
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-[#A294F9] transition-colors">
+                <a href="#testimonials" className="hover:text-[#0079FE] transition-colors">
                   Success Stories
                 </a>
               </li>
@@ -65,22 +65,22 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3.5 text-[14px] font-medium text-brand-navy/70">
               <li>
-                <a href="#contact" className="hover:text-[#A294F9] transition-colors">
+                <a href="#contact" className="hover:text-[#0079FE] transition-colors">
                   Consultation
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#A294F9] transition-colors">
+                <a href="#contact" className="hover:text-[#0079FE] transition-colors">
                   Current Vacancies
                 </a>
               </li>
               <li>
-                <a href="#process" className="hover:text-[#A294F9] transition-colors">
+                <a href="#process" className="hover:text-[#0079FE] transition-colors">
                   Visa Checklist
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#A294F9] transition-colors">
+                <a href="#contact" className="hover:text-[#0079FE] transition-colors">
                   Biometrics Guide
                 </a>
               </li>
@@ -94,22 +94,22 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3.5 text-[14px] font-medium text-brand-navy/70">
               <li>
-                <a href="#" className="hover:text-[#A294F9] transition-colors">
+                <a href="#" className="hover:text-[#0079FE] transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#A294F9] transition-colors">
+                <a href="#" className="hover:text-[#0079FE] transition-colors">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#A294F9] transition-colors">
+                <a href="#" className="hover:text-[#0079FE] transition-colors">
                   Ministry Compliance
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#A294F9] transition-colors">
+                <a href="#" className="hover:text-[#0079FE] transition-colors">
                   Gulf Labor Laws
                 </a>
               </li>
@@ -129,7 +129,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#A294F9] text-brand-navy hover:text-[#A294F9] flex items-center justify-center shadow-2xs transition-colors"
+                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#A294F9] text-brand-navy hover:text-[#A294F9] flex items-center justify-center shadow-2xs transition-colors"
+                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +164,7 @@ export default function Footer() {
 
             {/* Language indicator short badge */}
             <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-slate border border-gray-200 text-xs font-bold text-brand-navy">
-              <Globe className="w-3.5 h-3.5 text-[#A294F9]" />
+              <Globe className="w-3.5 h-3.5 text-[#0079FE]" />
               <span>Available in Arabic & English</span>
             </div>
           </div>
