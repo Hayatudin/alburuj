@@ -31,7 +31,7 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="relative py-24 bg-transparent overflow-hidden border-t border-slate-200/40">
+    <section id="process" className="relative py-24 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
@@ -52,7 +52,7 @@ export default function Process() {
                 return (
                   <div key={step.title} className="flex gap-5 md:gap-6 items-start">
                     {/* Icon Column */}
-                    <div className={`flex-shrink-0 w-12 h-12 rounded-2xl ${step.bgColor} ${step.iconColor} flex items-center justify-center border border-black/5`}>
+                    <div className={`flex-shrink-0 w-12 h-12 rounded-2xl ${step.bgColor} ${step.iconColor} flex items-center justify-center border border-slate-100`}>
                       <IconComponent className="w-5 h-5" />
                     </div>
                     {/* Text Column */}
@@ -74,15 +74,15 @@ export default function Process() {
           <div className="lg:col-span-6 flex justify-center relative">
             
             {/* Main Visual Card - Flat & Minimal */}
-            <div className="relative w-[340px] md:w-[360px] p-6 bg-white rounded-[2rem] shadow-xs border border-gray-200 flex flex-col">
+            <div className="relative w-[340px] md:w-[360px] p-6 bg-white rounded-[2rem] shadow-xs border border-slate-100 flex flex-col">
               
               {/* Card Image representation - Clean Light Flat Blue */}
-              <div className="relative h-[180px] w-full bg-slate-50 rounded-2xl overflow-hidden mb-6 border border-gray-100">
+              <div className="relative h-[180px] w-full bg-slate-50 rounded-2xl overflow-hidden mb-6 border border-slate-100">
                 <div className="absolute inset-0 bg-dot-pattern opacity-30" />
                 
                 {/* Large center graphic */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-brand-navy">
-                  <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border shadow-3xs">
+                  <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border border-slate-100 shadow-3xs">
                     <Compass className="w-6 h-6 text-sky-700" />
                   </div>
                   <span className="mt-3 block text-xs font-bold tracking-widest uppercase text-brand-navy/60">
@@ -103,13 +103,13 @@ export default function Process() {
 
                 {/* Sub-Badges row */}
                 <div className="flex gap-4 items-center mb-6">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-gray-150">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-slate-100">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-gray-150">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-slate-100">
                     <UserCheck className="w-4 h-4" />
                   </div>
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-gray-150">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-slate text-brand-navy border border-slate-100">
                     <Send className="w-4 h-4" />
                   </div>
                 </div>
@@ -124,8 +124,8 @@ export default function Process() {
               </div>
 
               {/* signature floating ongoing mini-card (overlapping on absolute position) - Clean flat border */}
-              <div className="absolute bottom-[10%] right-[-30px] md:right-[-40px] bg-white px-5 py-4 rounded-2xl shadow-sm flex gap-3 border border-gray-200 w-[230px]">
-                <div className="w-10 h-10 rounded-full bg-brand-peach flex items-center justify-center text-brand-gold flex-shrink-0 border">
+              <div className="absolute bottom-[10%] right-[-30px] md:right-[-40px] bg-white px-5 py-4 rounded-2xl shadow-sm flex gap-3 border border-slate-100 w-[230px]">
+                <div className="w-10 h-10 rounded-full bg-brand-peach flex items-center justify-center text-brand-gold flex-shrink-0 border border-slate-100">
                   <UserCheck className="w-5 h-5" />
                 </div>
                 <div className="flex-1">
@@ -138,7 +138,7 @@ export default function Process() {
                   </span>
                   
                   {/* Linear progress bar */}
-                  <div className="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden border">
+                  <div className="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden border border-slate-100">
                     <div
                       className="bg-brand-teal h-full rounded-full"
                       style={{ width: "85%" }}

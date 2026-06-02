@@ -14,7 +14,7 @@ export default function ContactMap() {
   };
 
   return (
-    <section id="contact" className="relative py-24 bg-transparent overflow-visible border-t border-slate-200/40">
+    <section id="contact" className="relative py-24 bg-transparent overflow-visible">
       {/* Clean Dot Grid Accent */}
       <div className="absolute bottom-[5%] left-[3%] w-[100px] h-[100px] bg-dot-pattern opacity-40 hidden md:block" />
 
@@ -39,7 +39,7 @@ export default function ContactMap() {
               {/* Action Quick Contact */}
               <div className="flex flex-col gap-5 mb-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-brand-teal flex items-center justify-center border border-gray-100 shadow-xs flex-shrink-0">
+                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-brand-teal flex items-center justify-center border border-slate-100 shadow-xs flex-shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -49,7 +49,7 @@ export default function ContactMap() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-brand-gold flex items-center justify-center border border-gray-100 shadow-xs flex-shrink-0">
+                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-brand-gold flex items-center justify-center border border-slate-100 shadow-xs flex-shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
@@ -59,7 +59,7 @@ export default function ContactMap() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-indigo-500 flex items-center justify-center border border-gray-100 shadow-xs flex-shrink-0">
+                  <div className="w-11 h-11 rounded-xl bg-brand-slate text-indigo-500 flex items-center justify-center border border-slate-100 shadow-xs flex-shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -71,7 +71,7 @@ export default function ContactMap() {
             </div>
 
             {/* Quick WhatsApp Banner Card */}
-            <div className="p-6 rounded-3xl bg-emerald-50/50 border border-emerald-200/50 flex flex-col sm:flex-row items-start sm:items-center gap-5 shadow-xs">
+            <div className="p-6 rounded-3xl bg-emerald-50/50 border border-emerald-100 flex flex-col sm:flex-row items-start sm:items-center gap-5 shadow-xs">
               <div className="w-11 h-11 rounded-full bg-emerald-500 flex items-center justify-center text-white shadow-sm flex-shrink-0">
                 <MessageSquare className="w-5 h-5 fill-current" />
               </div>
@@ -95,7 +95,7 @@ export default function ContactMap() {
 
           {/* Right Column: Expanded Full-Height Map Panel (7 columns) */}
           <div className="lg:col-span-7 flex flex-col justify-stretch">
-            <div className="h-full min-h-[400px] w-full rounded-[2rem] overflow-hidden shadow-sm border border-gray-200 relative group flex flex-col">
+            <div className="h-full min-h-[400px] w-full rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 relative group flex flex-col">
               <iframe
                 title="Albrooj Riyadh Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7891238491873!2d46.6712349123456!3d24.7135891234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d11b235%3A0x6c6e6df6f6df6df6!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"
@@ -109,7 +109,7 @@ export default function ContactMap() {
               />
               
               {/* Map floating indicator */}
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-gray-200 shadow-sm">
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-slate-100 shadow-sm">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                 <span className="text-[11px] font-extrabold text-brand-navy uppercase tracking-wider">
                   Albrooj Riyadh HQ
@@ -127,7 +127,7 @@ export default function ContactMap() {
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
         {/* Animated Pop-Up Helper Chatbox */}
         {showWaWidget && (
-          <div className="mb-4 w-[280px] md:w-[320px] bg-white rounded-3xl shadow-xl border border-gray-150 overflow-hidden transition-all duration-300">
+          <div className="mb-4 w-[280px] md:w-[320px] bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden transition-all duration-300">
             {/* Header */}
             <div className="p-4 bg-emerald-500 text-white flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -152,7 +152,7 @@ export default function ContactMap() {
 
             {/* Chat Body */}
             <div className="p-4 bg-brand-slate flex flex-col gap-3.5">
-              <div className="p-3.5 rounded-2xl bg-white border border-gray-100 text-[13px] font-medium leading-relaxed text-brand-navy/70">
+              <div className="p-3.5 rounded-2xl bg-white border border-slate-100 text-[13px] font-medium leading-relaxed text-brand-navy/70">
                 Hi there! 👋 Seeking a rewarding career path in Saudi Arabia, Kuwait, or Qatar? Speak directly with our placement advisor!
               </div>
 
@@ -162,7 +162,7 @@ export default function ContactMap() {
                   href={getWhatsAppLink("Hello, I would like to check current openings for Nurses / Healthcare in Saudi Arabia.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-gray-200 hover:border-emerald-200 transition-colors flex items-center justify-between"
+                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-slate-100 hover:border-emerald-100 transition-colors flex items-center justify-between"
                 >
                   <span>Apply: Healthcare Roles 🏥</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -172,7 +172,7 @@ export default function ContactMap() {
                   href={getWhatsAppLink("Hello, I am interested in Engineering and Infrastructure positions in Kuwait / Qatar.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-gray-200 hover:border-emerald-200 transition-colors flex items-center justify-between"
+                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-slate-100 hover:border-emerald-100 transition-colors flex items-center justify-between"
                 >
                   <span>Apply: Engineering Roles 🏗️</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -182,7 +182,7 @@ export default function ContactMap() {
                   href={getWhatsAppLink("Hello, I want to track my active visa stamping process with Albrooj.")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-gray-200 hover:border-emerald-200 transition-colors flex items-center justify-between"
+                  className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-slate-100 hover:border-emerald-100 transition-colors flex items-center justify-between"
                 >
                   <span>Track Stamping Process 📝</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -191,7 +191,7 @@ export default function ContactMap() {
             </div>
 
             {/* Footer */}
-            <div className="p-3 bg-white border-t border-gray-100 text-center">
+            <div className="p-3 bg-white border-t border-slate-100 text-center">
               <a
                 href={getWhatsAppLink()}
                 target="_blank"

@@ -27,35 +27,30 @@ export default function Destinations() {
     {
       name: "Qatar",
       count: "600+ Deployed",
-      image: "/qatar.png",
+      image: "/qatar.jpg",
     },
     {
       name: "Oman",
       count: "320+ Deployed",
-      image: "https://images.unsplash.com/photo-1608933221956-c443d50f8c2b?q=80&w=600&auto=format&fit=crop",
+      image: "/OMAN.jpg",
     },
     {
       name: "Jordan",
       count: "380+ Deployed",
-      image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=600&auto=format&fit=crop",
+      image: "/jordan.jpg",
     },
     {
       name: "Lebanon",
       count: "200+ Deployed",
-      image: "https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=600&auto=format&fit=crop",
+      image: "/lebanon.jpg",
     },
-    {
-      name: "And Beyond",
-      count: "Explore Placements",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
-    },
+
   ];
 
   // Duplicate countries list to ensure perfect endless scrolling
   const scrollList = [...countries, ...countries];
-
   return (
-    <section id="destinations" className="py-24 bg-transparent overflow-hidden border-t border-navy-100">
+    <section id="destinations" className="py-24 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mb-16 text-center">
         {/* Section Heading */}
         <div className="flex flex-col items-center gap-3">
@@ -82,7 +77,7 @@ export default function Destinations() {
           {scrollList.map((country, idx) => (
             <div
               key={idx}
-              className="group/card relative w-72 sm:w-80 h-96 rounded-[2.2rem] overflow-hidden border border-navy-100/30 flex-shrink-0 shadow-sm transition-all duration-300"
+              className="group/card relative w-72 sm:w-80 h-96 rounded-[2.2rem] overflow-hidden flex-shrink-0 shadow-sm transition-all duration-300"
             >
               {/* Country Cityscape Image */}
               <img
@@ -92,26 +87,16 @@ export default function Destinations() {
               />
 
               {/* Dark Ambient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
 
-              {/* Floating Bottom Glass Panel Control */}
-              <div className="absolute bottom-6 inset-x-6 glass-effect rounded-[1.6rem] p-5 flex items-center justify-between z-10 text-left border border-white/30 shadow-lg">
-                <div>
-                  <h3 className="font-extrabold text-navy-950 text-[15px] tracking-tight">
-                    {country.name}
-                  </h3>
-                  <p className="text-[10px] text-[#0079FE] font-black uppercase tracking-wider mt-0.5">
-                    {country.count}
-                  </p>
-                </div>
-
-                {/* Arrow up-right pill action */}
-                <a
-                  href="#contact"
-                  className="w-10 h-10 rounded-full bg-[#0079FE] text-white flex items-center justify-center hover:bg-[#0263e2] transition-transform duration-300 shadow-md group-hover/card:scale-105 active:scale-95"
-                >
-                  <ArrowUpRight className="w-5 h-5 text-white stroke-[2.5]" />
-                </a>
+              {/* Minimal Text Overlay (No Box Panel) */}
+              <div className="absolute bottom-8 left-8 right-8 z-10 text-left">
+                <h3 className="font-extrabold text-white text-2xl tracking-tight uppercase font-sans">
+                  {country.name}
+                </h3>
+                <p className="text-[11px] text-white/70 font-bold uppercase tracking-widest mt-1">
+                  {country.count}
+                </p>
               </div>
             </div>
           ))}

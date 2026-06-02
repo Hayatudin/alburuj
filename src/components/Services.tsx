@@ -3,7 +3,7 @@ import { ShieldCheck, CheckCircle, Award, Star, ArrowUpRight } from "lucide-reac
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-transparent border-t border-navy-100">
+    <section id="services" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Section Heading */}
         <div className="text-center flex flex-col items-center gap-3 mb-16">
@@ -20,15 +20,15 @@ export default function Services() {
 
         {/* Services Cards Grid in Thrive Style */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          
+
           {/* Card 1: Thrive Dark Capsule Tags Card (span-4) */}
           <div className="lg:col-span-4 bg-navy-950 rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[380px] shadow-sm relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#0079FE]/10 rounded-full blur-2xl"></div>
-            
+
             <div className="flex flex-col gap-4 text-left">
-              <h3 className="text-xl font-extrabold text-white tracking-tight leading-snug">
+              <h3 className="text-xl font-extrabold text-navy-950 tracking-tight leading-snug">
                 Albrooj works for various industries. <br />
-                <span className="text-[#bae0fd]">Apply today!</span>
+                <span className="text-[#B6D9FF]">Apply today!</span>
               </h3>
               <p className="text-xs text-navy-400 leading-normal max-w-xs">
                 We supply government-vetted candidates across diverse sectors, coordinating complete embassy approvals.
@@ -38,16 +38,13 @@ export default function Services() {
             {/* Organic Capsule/Bubble Tags Layout */}
             <div className="flex flex-wrap gap-2.5 mt-8 z-10 text-left">
               <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Healthcare</span>
-              <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-[#0079FE]/15 text-[#bae0fd] border border-[#0079FE]/30">Logistics</span>
-              <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-amber-500/10 text-amber-300 border border-amber-500/20">Hospitality</span>
-              <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-purple-500/10 text-purple-300 border border-purple-500/20">Engineering</span>
               <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-rose-500/10 text-rose-300 border border-rose-500/20">Skilled Trades</span>
               <span className="px-3 py-1.5 rounded-full text-[10.5px] font-bold bg-teal-500/10 text-teal-300 border border-teal-500/20">Domestic Care</span>
             </div>
           </div>
 
           {/* Card 2: Thrive Avatar Social Proof Card (span-4) */}
-          <div className="lg:col-span-4 bg-white rounded-[2.5rem] p-8 border border-navy-100/80 flex flex-col justify-between min-h-[380px] shadow-sm text-left">
+          <div className="lg:col-span-4 bg-white rounded-[2.5rem] p-8 border border-slate-100 flex flex-col justify-between min-h-[380px] shadow-sm text-left">
             <div className="flex flex-col gap-3">
               <div className="w-10 h-10 rounded-xl bg-brand-50 text-[#0079FE] flex items-center justify-center mb-1">
                 <Award className="w-5.5 h-5.5 text-[#0079FE]" />

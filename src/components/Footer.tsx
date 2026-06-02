@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#FAF9F6] border-t border-slate-200/40 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-[#FAF9F6] pt-16 pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
           
@@ -129,7 +129,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
+                className="w-10 h-10 rounded-full bg-brand-slate border border-slate-100 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
+                className="w-10 h-10 rounded-full bg-brand-slate border border-slate-100 hover:border-[#0079FE] text-brand-navy hover:text-[#0079FE] flex items-center justify-center shadow-2xs transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@ export default function Footer() {
                 href="https://wa.me/966500000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-brand-slate border border-gray-200 hover:border-emerald-500 text-brand-navy hover:text-emerald-500 flex items-center justify-center shadow-2xs transition-colors"
+                className="w-10 h-10 rounded-full bg-brand-slate border border-slate-100 hover:border-emerald-500 text-brand-navy hover:text-emerald-500 flex items-center justify-center shadow-2xs transition-colors"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4 fill-current" />
@@ -163,7 +163,7 @@ export default function Footer() {
             </div>
 
             {/* Language indicator short badge */}
-            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-slate border border-gray-200 text-xs font-bold text-brand-navy">
+            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-slate border border-slate-100 text-xs font-bold text-brand-navy">
               <Globe className="w-3.5 h-3.5 text-[#0079FE]" />
               <span>Available in Arabic & English</span>
             </div>
@@ -172,7 +172,7 @@ export default function Footer() {
         </div>
 
         {/* Divider Line */}
-        <div className="border-t border-gray-150 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-[13px] font-semibold text-brand-navy/50 text-center md:text-left">
             © {currentYear} Albrooj Employment Agency. All rights reserved. Registered licensed partner of GCC Employer Councils.
           </span>

@@ -42,7 +42,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative py-24 bg-transparent border-t border-slate-200/40 overflow-hidden">
+    <section id="testimonials" className="relative py-24 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
           
@@ -70,8 +70,8 @@ export default function Testimonials() {
             </div>
 
             {/* Trust Badge - Clean */}
-            <div className="p-4 rounded-2xl bg-white border border-gray-200 flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-brand-peach flex items-center justify-center text-brand-gold text-sm font-black border">
+            <div className="p-4 rounded-2xl bg-white border border-slate-100 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-brand-peach flex items-center justify-center text-brand-gold text-sm font-black border border-slate-100">
                 ★
               </div>
               <div>
@@ -93,7 +93,7 @@ export default function Testimonials() {
                 return (
                   <div
                     key={`back-${item.name}`}
-                    className="absolute inset-0 translate-x-[16px] translate-y-[16px] p-6 bg-gray-50 border border-gray-200 rounded-3xl -z-10 opacity-50 scale-[0.97] pointer-events-none select-none transition-all duration-500"
+                    className="absolute inset-0 translate-x-[16px] translate-y-[16px] p-6 bg-gray-50 border border-slate-100 rounded-3xl -z-10 opacity-50 scale-[0.97] pointer-events-none select-none transition-all duration-500"
                   >
                     <div className="w-10 h-10 rounded-full bg-gray-200" />
                     <div className="h-4 bg-gray-200 rounded w-full mt-6" />
@@ -110,7 +110,7 @@ export default function Testimonials() {
                 return (
                   <div
                     key={`front-${item.name}`}
-                    className="w-full p-6 md:p-8 bg-white rounded-3xl shadow-xs border border-gray-200 transition-all duration-500 relative"
+                    className="w-full p-6 md:p-8 bg-white rounded-3xl shadow-xs border border-slate-100 transition-all duration-500 relative"
                   >
                     {/* User profile bubble */}
                     <div className="absolute top-[-22px] left-8 w-11 h-11 rounded-full bg-[#0079FE] text-white font-extrabold text-sm flex items-center justify-center border-4 border-white shadow-sm">
@@ -135,7 +135,7 @@ export default function Testimonials() {
                     </p>
 
                     {/* User credentials */}
-                    <div className="border-t border-gray-100 pt-4 flex items-center justify-between">
+                    <div className="border-t border-slate-100 pt-4 flex items-center justify-between">
                       <div>
                         <h4 className="text-base font-bold text-brand-navy">
                           {item.name}
@@ -144,7 +144,7 @@ export default function Testimonials() {
                           {item.role}
                         </span>
                       </div>
-                      <span className="text-[11px] font-bold text-brand-teal px-3 py-1 rounded-full bg-teal-50 border border-teal-100">
+                      <span className="text-[11px] font-bold text-brand-teal px-3 py-1 rounded-full bg-teal-50 border border-teal-100/50">
                         {item.location}
                       </span>
                     </div>
@@ -158,14 +158,14 @@ export default function Testimonials() {
             <div className="flex flex-col gap-3 ml-4 relative z-10">
               <button
                 onClick={handlePrev}
-                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
+                className="w-10 h-10 rounded-full border border-slate-100 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
                 aria-label="Previous testimonial"
               >
                 <ChevronUp className="w-5 h-5" />
               </button>
               <button
                 onClick={handleNext}
-                className="w-10 h-10 rounded-full border border-gray-200 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
+                className="w-10 h-10 rounded-full border border-slate-100 bg-white hover:bg-[#0079FE] hover:text-white hover:border-[#0079FE] flex items-center justify-center text-brand-navy transition-colors active:scale-95"
                 aria-label="Next testimonial"
               >
                 <ChevronDown className="w-5 h-5" />
