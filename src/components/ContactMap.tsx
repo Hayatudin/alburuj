@@ -44,7 +44,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">Agency Headquarters</span>
-                    <span className="block text-[14px] font-bold text-brand-navy">Alburuj Tower, Level 4, Riyadh, Saudi Arabia</span>
+                    <span className="block text-[14px] font-bold text-brand-navy">Ayer Tena, Addis Abeba, Ethiopia</span>
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">Direct Call Back</span>
-                    <a href="tel:+966500000000" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">+966 50 000 0000</a>
+                    <a href="tel:+251925939684" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">+2519 2593 9684</a>
                   </div>
                 </div>
 
