@@ -28,7 +28,7 @@ export default function Hero() {
             
             {/* Subtext */}
             <p className="text-base md:text-lg text-slate-600 font-medium leading-relaxed max-w-lg mb-8">
-              Albrooj is here for you with verified job placements and compliant visa services from skilled advisors and top employers all around the Arab world.
+              Alburuj is here for you with verified job placements and compliant visa services from skilled advisors and top employers all around the Arab world.
             </p>
             
             {/* Capsule Buttons */}

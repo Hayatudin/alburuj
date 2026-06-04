@@ -34,13 +34,13 @@ export default function Process() {
     <section id="process" className="relative py-24 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
-          
+
           {/* Left Column: 3 Steps Timeline */}
           <div className="lg:col-span-6">
             <span className="text-[13px] md:text-sm uppercase tracking-[0.25em] font-bold text-brand-navy/40 block mb-3">
               Easy & Compliant
             </span>
-            
+
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-navy leading-tight mb-12">
               Land Your Dream Job in 3 Easy Steps
             </h2>
@@ -72,14 +72,14 @@ export default function Process() {
 
           {/* Right Column: Clean Jadoo Floating Progress Card */}
           <div className="lg:col-span-6 flex justify-center relative">
-            
+
             {/* Main Visual Card - Flat & Minimal */}
             <div className="relative w-[340px] md:w-[360px] p-6 bg-white rounded-[2rem] shadow-xs border border-slate-100 flex flex-col">
-              
+
               {/* Card Image representation - Clean Light Flat Blue */}
               <div className="relative h-[180px] w-full bg-slate-50 rounded-2xl overflow-hidden mb-6 border border-slate-100">
                 <div className="absolute inset-0 bg-dot-pattern opacity-30" />
-                
+
                 {/* Large center graphic */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-brand-navy">
                   <div className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border border-slate-100 shadow-3xs">
@@ -96,9 +96,9 @@ export default function Process() {
                 <h4 className="text-lg font-extrabold text-brand-navy mb-1.5">
                   Cohort Placement to Riyadh
                 </h4>
-                
+
                 <span className="text-[13px] font-semibold text-brand-navy/40 block mb-4">
-                  Departure Date: June 15 | by Albrooj Agency
+                  Departure Date: June 15 | by Alburuj Agency
                 </span>
 
                 {/* Sub-Badges row */}
@@ -136,7 +136,7 @@ export default function Process() {
                   <span className="block text-[13px] font-bold text-brand-navy mb-2">
                     Medical & Stamping
                   </span>
-                  
+
                   {/* Linear progress bar */}
                   <div className="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden border border-slate-100">
                     <div

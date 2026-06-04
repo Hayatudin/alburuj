@@ -31,18 +31,18 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 font-medium">
           <div className="flex items-center gap-6">
             <a
-              href="tel:0924054412"
+              href="tel:+251925939684"
               className="flex items-center gap-2 hover:text-[#0079FE] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#0079FE]" />
-              <span>0924054412</span>
+              <span>+251925939684</span>
             </a>
             <a
-              href="mailto:ziyusheka@gmail.com"
+              href="mailto:yahyaaabdu93@gmail.com"
               className="flex items-center gap-2 hover:text-[#0079FE] transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-[#0079FE]" />
-              <span>ziyusheka@gmail.com</span>
+              <span>yahyaaabdu93@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center gap-4 text-[11px] text-slate-500">
@@ -56,17 +56,16 @@ export default function Navbar() {
 
       {/* Main Navigation Bar */}
       <div
-        className={`w-full py-5 px-6 md:px-12 transition-all duration-300 ${
-          scrolled
-            ? "glass-effect shadow-sm py-4 border-b border-slate-200/40"
-            : "bg-transparent border-b border-transparent"
-        }`}
+        className={`w-full py-5 px-6 md:px-12 transition-all duration-300 ${scrolled
+          ? "glass-effect shadow-sm py-4 border-b border-slate-200/40"
+          : "bg-transparent border-b border-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1 group">
             <span className="font-extrabold text-2xl tracking-tight text-slate-900 font-sans">
-              Albrooj
+              Alburuj
             </span>
             <span className="w-2.5 h-2.5 rounded-full bg-[#0079FE] self-end mb-1.5 animate-pulse"></span>
           </Link>

@@ -61,7 +61,7 @@ export default function Destinations() {
             Popular Work Destinations
           </h2>
           <p className="text-navy-500 max-w-2xl text-sm sm:text-base leading-relaxed">
-            Albrooj organizes secure placements in vetted, authorized countries across the Middle East and beyond.
+            Alburuj organizes secure placements in vetted, authorized countries across the Middle East and beyond.
           </p>
         </div>
       </div>

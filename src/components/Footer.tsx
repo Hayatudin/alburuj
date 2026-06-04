@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-[#FAF9F6] pt-16 pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
-          
+
           {/* Column 1: Branding & Intro */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link href="/" className="flex items-center gap-2 mb-6 group">
@@ -18,11 +18,11 @@ export default function Footer() {
                 A
               </div>
               <span className="font-serif text-2xl font-extrabold text-brand-navy tracking-wide">
-                Albrooj<span className="text-[#0079FE]">.</span>
+                Alburuj<span className="text-[#0079FE]">.</span>
               </span>
             </Link>
             <p className="text-[14px] font-medium leading-relaxed text-brand-navy/60 max-w-sm mb-6">
-              Albrooj is a premier, fully licensed foreign employment agency. We specialize in fast-track, secure, and prestigious career placements in Saudi Arabia, Qatar, Kuwait, UAE, Oman, and Jordan.
+              Alburuj is a premier, fully licensed foreign employment agency. We specialize in fast-track, secure, and prestigious career placements in Saudi Arabia, Qatar, Kuwait, UAE, Oman, and Jordan.
             </p>
             <span className="text-[11px] font-bold text-brand-navy/40 uppercase tracking-widest block">
               License No: AL-2026-GCC
@@ -121,7 +121,7 @@ export default function Footer() {
             <h4 className="text-base font-extrabold text-brand-navy mb-5 uppercase tracking-wider text-[13px] lg:text-right w-full">
               Social Links
             </h4>
-            
+
             {/* Social Icons Stack */}
             <div className="flex gap-4 mb-6">
               {/* LinkedIn Custom SVG */}
@@ -174,7 +174,7 @@ export default function Footer() {
         {/* Divider Line */}
         <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-[13px] font-semibold text-brand-navy/50 text-center md:text-left">
-            © {currentYear} Albrooj Employment Agency. All rights reserved. Registered licensed partner of GCC Employer Councils.
+            © {currentYear} Alburuj Employment Agency. All rights reserved. Registered licensed partner of GCC Employer Councils.
           </span>
           <div className="flex gap-6 text-[13px] font-bold text-brand-navy/40">
             <a href="#" className="hover:text-brand-navy transition-colors">Security</a>

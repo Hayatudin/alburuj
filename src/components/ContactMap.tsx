@@ -9,7 +9,7 @@ export default function ContactMap() {
 
   // Pre-filled WhatsApp message URL helper
   const getWhatsAppLink = (customText?: string) => {
-    const defaultText = customText || "Hello Albrooj, I am looking to apply for job opportunities in the Arab Gulf. Please guide me.";
+    const defaultText = customText || "Hello Alburuj, I am looking to apply for job opportunities in the Arab Gulf. Please guide me.";
     return `https://wa.me/966500000000?text=${encodeURIComponent(defaultText)}`;
   };
 
@@ -20,18 +20,18 @@ export default function ContactMap() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* Left Column: Agency Info & WhatsApp Integration (5 columns) */}
           <div className="lg:col-span-5 flex flex-col justify-between gap-8">
             <div>
               <span className="text-[13px] md:text-sm uppercase tracking-[0.25em] font-extrabold text-[#0079FE] block mb-3">
                 Get In Touch
               </span>
-              
+
               <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy leading-tight mb-4">
                 Begin your career journey today
               </h2>
-              
+
               <p className="text-brand-navy/60 font-semibold text-[15px] leading-relaxed mb-8">
                 Connect directly with our headquarters in Riyadh. Speak to a licensing advisor on WhatsApp for rapid, pre-departure support.
               </p>
@@ -44,7 +44,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">Agency Headquarters</span>
-                    <span className="block text-[14px] font-bold text-brand-navy">Albrooj Tower, Level 4, Riyadh, Saudi Arabia</span>
+                    <span className="block text-[14px] font-bold text-brand-navy">Alburuj Tower, Level 4, Riyadh, Saudi Arabia</span>
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@ export default function ContactMap() {
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-brand-navy/40 uppercase">E-Mail Address</span>
-                    <a href="mailto:apply@albrooj.com" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">apply@albrooj.com</a>
+                    <a href="mailto:apply@Alburuj.com" className="block text-[14px] font-bold text-brand-navy hover:text-[#0079FE] transition-colors">apply@Alburuj.com</a>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function ContactMap() {
           <div className="lg:col-span-7 flex flex-col justify-stretch">
             <div className="h-full min-h-[400px] w-full rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 relative group flex flex-col">
               <iframe
-                title="Albrooj Riyadh Location Map"
+                title="Alburuj Riyadh Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7891238491873!2d46.6712349123456!3d24.7135891234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d11b235%3A0x6c6e6df6f6df6df6!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"
                 width="100%"
                 height="100%"
@@ -107,12 +107,12 @@ export default function ContactMap() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="flex-grow grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
               />
-              
+
               {/* Map floating indicator */}
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 border border-slate-100 shadow-sm">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
                 <span className="text-[11px] font-extrabold text-brand-navy uppercase tracking-wider">
-                  Albrooj Riyadh HQ
+                  Alburuj Riyadh HQ
                 </span>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function ContactMap() {
                   <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-emerald-500" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-extrabold">Albrooj Advisor</h4>
+                  <h4 className="text-sm font-extrabold">Alburuj Advisor</h4>
                   <span className="text-[11px] opacity-85 block">Active Recruitment Portal</span>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function ContactMap() {
                 </a>
 
                 <a
-                  href={getWhatsAppLink("Hello, I want to track my active visa stamping process with Albrooj.")}
+                  href={getWhatsAppLink("Hello, I want to track my active visa stamping process with Alburuj.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3.5 py-2 rounded-xl bg-white hover:bg-emerald-50 text-[12px] font-bold text-brand-navy hover:text-emerald-700 border border-slate-100 hover:border-emerald-100 transition-colors flex items-center justify-between"
@@ -209,7 +209,7 @@ export default function ContactMap() {
         <button
           onClick={() => setShowWaWidget(!showWaWidget)}
           className="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-xl hover:scale-105 active:scale-[0.95] transition-all relative group cursor-pointer"
-          aria-label="Contact Albrooj Recruitment on WhatsApp"
+          aria-label="Contact Alburuj Recruitment on WhatsApp"
         >
           {/* Notification Dot */}
           {!showWaWidget && (
@@ -218,9 +218,9 @@ export default function ContactMap() {
               <span className="relative inline-flex rounded-full h-4 w-4 bg-brand-gold text-[8px] text-brand-navy font-black items-center justify-center">1</span>
             </span>
           )}
-          
+
           {showWaWidget ? <X className="w-6 h-6" /> : <MessageSquare className="w-6 h-6 fill-current" />}
-          
+
           {/* Tooltip */}
           <span className="absolute right-16 scale-0 group-hover:scale-100 bg-brand-navy text-white text-xs font-bold px-3 py-1.5 rounded-xl transition-all shadow-md duration-200 pointer-events-none select-none whitespace-nowrap">
             WhatsApp Careers Help

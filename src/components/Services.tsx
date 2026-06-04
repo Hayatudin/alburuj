@@ -27,7 +27,7 @@ export default function Services() {
 
             <div className="flex flex-col gap-4 text-left">
               <h3 className="text-xl font-extrabold text-navy-950 tracking-tight leading-snug">
-                Albrooj works for various industries. <br />
+                Alburuj works for various industries. <br />
                 <span className="text-[#B6D9FF]">Apply today!</span>
               </h3>
               <p className="text-xs text-navy-400 leading-normal max-w-xs">

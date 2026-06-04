@@ -17,12 +17,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Albrooj | Premier Foreign Employment Agency & Gulf Careers",
-  description: "Albrooj is a licensed, elite foreign employment agency connecting skilled professionals and workers with premium career opportunities in Saudi Arabia, Kuwait, Qatar, UAE, Oman, and Jordan.",
-  keywords: ["foreign employment", "Gulf careers", "work abroad", "Saudi Arabia jobs", "Kuwait jobs", "Qatar jobs", "agency recruitment", "Albrooj recruitment"],
-  authors: [{ name: "Albrooj Agency" }],
+  title: "Alburuj | Premier Foreign Employment Agency & Gulf Careers",
+  description: "Alburuj is a licensed, elite foreign employment agency connecting skilled professionals and workers with premium career opportunities in Saudi Arabia, Kuwait, Qatar, UAE, Oman, and Jordan.",
+  keywords: ["foreign employment", "Gulf careers", "work abroad", "Saudi Arabia jobs", "Kuwait jobs", "Qatar jobs", "agency recruitment", "Alburuj recruitment"],
+  authors: [{ name: "Alburuj Agency" }],
   openGraph: {
-    title: "Albrooj | Premier Foreign Employment Agency & Gulf Careers",
+    title: "Alburuj | Premier Foreign Employment Agency & Gulf Careers",
     description: "Your gateway to elite career placements in Saudi Arabia, Kuwait, Qatar, Oman, and Jordan. Trusted licensing, end-to-end visa services, and candidate support.",
     type: "website",
     locale: "en_US",

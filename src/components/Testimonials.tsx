@@ -9,7 +9,7 @@ export default function Testimonials() {
   const feedback = [
     {
       quote:
-        "Albrooj changed my career trajectory. From document evaluation to my final boarding pass, their team managed everything with ultimate transparency and speed. I am now overseeing prime infrastructure in Riyadh!",
+        "Alburuj changed my career trajectory. From document evaluation to my final boarding pass, their team managed everything with ultimate transparency and speed. I am now overseeing prime infrastructure in Riyadh!",
       name: "Ramil Hameed",
       role: "Senior Civil Engineer",
       location: "Riyadh, Saudi Arabia 🇸🇦",
@@ -25,7 +25,7 @@ export default function Testimonials() {
     },
     {
       quote:
-        "Most agencies make false promises regarding salaries. Albrooj matched me with a tier-1 logistics conglomerate in Kuwait with the exact contract terms we signed. Extremely professional and fully licensed.",
+        "Most agencies make false promises regarding salaries. Alburuj matched me with a tier-1 logistics conglomerate in Kuwait with the exact contract terms we signed. Extremely professional and fully licensed.",
       name: "Mustafa Naim",
       role: "Logistics Operations Lead",
       location: "Kuwait City, Kuwait 🇰🇼",
